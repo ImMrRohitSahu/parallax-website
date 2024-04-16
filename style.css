@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #595959;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#base-layer-one{
+    background-image: url(./assets/photo-1473773508845-188df298d2d1.avif);
+}
+.section>.parallax-inner-text{
+    font-family: "Inconsolata", monospace;
+    background-color: #343434;
+    color: #ffff;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+.section-lorem{
+    width: 100%;
+    height: 75vh;
+    min-height: 320px;
+    padding: 0rem 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+}
+.section-lorem>h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.section-lorem>p{
+    line-height: 1.8rem;
+    text-align: center;
+}
+.section-lorem-dark{
+    background-color: #343434;
+}
+.section-lorem-dark>*{
+    color: #e4e4e4 !important;
+}
+
+/* Base Layer Two */
+#base-layer-two{
+    background-image: url(./assets/photo-1441974231531-c6227db76b6e.avif);
+    height: 36vw;
+    min-height: 300px;
+}
+
+/* Base Layer Three */
+#base-layer-three{
+    background-image: url(./assets/photo-1470071459604-3b5ec3a7fe05.avif);
+    height: 36vw;
+    min-height: 300px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-lorem>p{
+        line-height: 1.4rem;
+    }
+}
